@@ -1,0 +1,121 @@
+/* Variables */
+:root {
+    --link-light-grey: #6c757d;
+    --primary-orange: #fec503; /* before: fed136 */
+    --footer-background-light-grey: #212529;
+    --footer-background-grey: #1a1d20;
+    --social-buttons-circle-dark-grey: #1a1d20;
+  }
+  
+
+  
+  /* Anchor Styles */
+  a {
+    color: var(--link-light-grey) !important;
+  }
+  
+  a:hover {
+    color: var(--primary-orange) !important;
+    text-decoration: none;
+  }
+  
+  /* Selection Styles */
+  ::selection {
+    background: var(--primary-orange) !important;
+    text-shadow: none;
+  }
+  
+  /* Footer Styles */
+  footer {
+    padding: 2rem 0;
+    background-color: #212529;
+  }
+  
+  /* Footer Column Styles */
+  .footer-column:not(:first-child) {
+    padding-top: 2rem;
+  }
+  
+  .footer-column {
+    text-align: center;
+  }
+  
+  .footer-column .nav-item {
+    .nav-link {
+      padding: 0.1rem 0;
+    }
+  
+    span.nav-link {
+      color: var(--link-light-grey);
+    }
+  
+    span.footer-title {
+      font-size: 14px;
+      font-weight: 700;
+      color: #fff;
+      text-transform: uppercase;
+    }
+  
+    .fas {
+      margin-right: 0.5rem;
+    }
+  }
+  
+  ul {
+    display: inline-block;
+  }
+  
+  @media (min-width: 768px) {
+    .footer-column:not(:first-child) {
+      padding-top: 0rem;
+    }
+  
+    ul {
+      text-align: left;
+    }
+  }
+  
+  /* Social Buttons Styles */
+  ul.social-buttons {
+    margin-bottom: 0;
+  }
+  
+  ul.social-buttons li a:active,
+  ul.social-buttons li a:focus,
+  ul.social-buttons li a:hover {
+    background-color: var(--primary-orange) !important;
+  }
+  
+  ul.social-buttons li a {
+    font-size: 20px;
+    line-height: 40px;
+    display: block;
+    width: 40px;
+    height: 40px;
+    transition: all 0.3s;
+    color: #fff !important;
+    border-radius: 100%;
+    outline: 0;
+    background-color: var(--footer-background-grey);
+  }
+  
+  /* Quick Links Styles */
+  footer .quick-links {
+    font-size: 90%;
+    line-height: 40px;
+    margin-bottom: 0;
+    text-transform: none;
+    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
+  
+  /* Copyright Styles */
+  .copyright {
+    color: white;
+  }
+  
+  /* Ellipsis Icon Styles */
+  .fa-ellipsis-h {
+    color: white;
+    padding: 2rem 0;
+  }
+  
